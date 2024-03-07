@@ -1,4 +1,21 @@
-.LottieAnimation1{
+@import '/src/styles/index.scss';
 
-  
+.LottieAnimation1{
+position: relative;
+top: 500px;
+align-self: center;
+align-content: center;
+align-items: center;
+
+@include mobile{
+  position: relative;
+  top: 600px;
+  right: 50px;
+  align-self: center;
+  align-content: center;
+  align-items: center; 
 }
+}
+
+
+

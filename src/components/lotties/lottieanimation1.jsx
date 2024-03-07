@@ -18,6 +18,8 @@ const LottieAnimation1 = () => {
     <div className='LottieAnimation1'>
       <Lottie 
         options={defaultOptions}
+        height={600}
+        width={600}
       />
     </div>
   );
