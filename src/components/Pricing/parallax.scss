@@ -1,0 +1,63 @@
+@import '/src/styles/index.scss';
+
+// #tsparticles {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+//   top: 0;
+//   left: 0;
+// }
+
+
+.parallax{
+  width:  100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+    
+  .maintitle{
+    font-size: 100px;
+    font-family: 'Gruppo', cursive;
+    align-items: center;
+
+    @include mobile{
+      font-size: 20px;
+      align-items: center;
+    }
+  }
+    
+  .mountains{
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    overflow: hidden;
+  }
+  .planets{
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .stars{
+    
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+}
+

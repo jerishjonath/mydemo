@@ -1,0 +1,63 @@
+@import "/src/styles/index.scss";
+
+.special-heading {
+  padding: 64px;
+  background: linear-gradient(45deg, #0004ff, #7bff00, #ea00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  align-items: center;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+ }
+  60% {
+    background-position: 600px;
+ }
+  100% {
+    background-position: 600px;
+ }
+}
+
+.home-text p{
+	margin:0;
+	overflow: hidden;
+}
+
+.home-text p {
+  font-size: 4vh;
+}
+.home-text p span{
+    font-size: 4.5vh;
+    color:#ff2c45;
+    font-weight: 700;
+    display:block;
+    line-height: 46px;
+    display: none;
+}
+
+.home-text p span.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+.home-text p span.text-out{
+	animation: textOut .5s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
