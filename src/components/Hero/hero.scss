@@ -7,6 +7,7 @@
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite linear;
   align-items: center;
+  left: 30px;
 }
 @keyframes shine {
   0% {
@@ -25,9 +26,9 @@
 	overflow: hidden;
 }
 
-.home-text p {
-  font-size: 4vh;
-}
+// .home-text p {
+//   font-size: 4vh;
+// }
 .home-text p span{
     font-size: 4.5vh;
     color:#ff2c45;

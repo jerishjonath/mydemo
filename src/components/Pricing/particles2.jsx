@@ -14,7 +14,7 @@ const ParticlesN = () => {
             },
             fpslimit:120,
             particles: {
-              number: { value: 20, density: { enable: false, value_area: 800 } },
+              number: { value: 40, density: { enable: false, value_area: 800 } },
               color: { value: "#ffffff" },
               shape: {
                 type: "star",

@@ -49,19 +49,19 @@ const Hero = () => {
   <section
   id="home"
   className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] flex flex-wrap"
- >
+>
   <div className="containerhero flex flex-wrap">
     <div className="w-full md:w-1/2 px-4">
       <LottieAnimation />  
     </div>
-    <div className="w-full md:w-1/2 px-4  ">
-      <div className="herotext mx-auto max-w-[800px] ">
-        <h1 className="special-heading mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-7xl sm:leading-tight md:text-6xl md:leading-tight ">
+    <div className="w-full md:w-1/2 px-4">
+      <div className="herotext mx-auto max-w-[800px] text-center">
+        <h1 className="special-heading mb-12 overflow-hidden animate-text !leading-relaxed text-body-color dark:text-body-color-dark text-4xl font-bold sm:text-8xl sm:leading-tight md:text-6xl md:leading-tight">
           "YOUR DIGITAL PARTNER"
         </h1>
         <div className="home-text relative z-20">
           <p
-            className="mb-12 overflow-hidden animate-text !leading-relaxed text-body-color dark:text-body-color-dark "
+            className="mb-12 overflow-hidden animate-text !leading-relaxed text-body-color dark:text-body-color-dark text-3xl font-bold sm:text-7xl sm:leading-tight md:text-6xl md:leading-tight "
             ref={txtsRef}
           >
             Nothing Great is{" "}

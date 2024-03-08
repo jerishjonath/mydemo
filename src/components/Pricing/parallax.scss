@@ -1,13 +1,22 @@
 @import '/src/styles/index.scss';
 
-// #tsparticles {
-//   width: 100%;
-//   height: 100%;
-//   margin: 0;
-//   padding: 0;
-//   top: 0;
-//   left: 0;
-// }
+.LottieAnimation1{
+  position: relative;
+  top: 500px;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  
+      @include mobile{
+        height: 20px !important;
+        position: relative;
+        top: 490px;
+        right: 55px;
+        align-self: center;
+        align-content: center;
+        align-items: center; 
+      }
+  }
 
 
 .parallax{
@@ -20,15 +29,47 @@
   overflow: hidden;
     
   .maintitle{
-    font-size: 4.5vw;
-    font-family: 'Gruppo', cursive;
+    font-size: 6.5vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
+    position: relative;
+    margin-bottom: 400px;
 
     @include mobile{
-      font-size: 20px;
+      font-size: 45px;
+      z-index: 3;
       align-items: center;
     }
+
+    .maintitle2{
+      font-size: 7vw;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      position: relative;
+      margin-bottom: 400px;
+      background: linear-gradient(45deg, #0004ff, #7bff00, #ea00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s infinite linear;
+      align-items: center;
+
+      @include mobile{
+        font-size: 50px;
+        align-items: center;
+      }
+    }
+    @keyframes shine {
+      0% {
+        background-position: 0;
+     }
+      60% {
+        background-position: 600px;
+     }
+      100% {
+        background-position: 600px;
+     }
+    }
   }
+
     
   .mountains{
     background-size: cover;
@@ -40,21 +81,26 @@
     overflow: hidden;
 
     @include mobile{
+      overflow: hidden;
       background-size: contain;
       background-repeat: no-repeat;
     }
   }
   .planets{
-    background-size: cover;
-    background-position: bottom;
+    background-size: 200vw;
+    margin-top: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
     position: absolute;
+    margin-bottom: 400px;
     z-index: 2;
-    overflow: hidden;
+    // overflow: hidden;
 
     @include mobile{
-      background-size:200px;
+      background-size:970px;
+      margin-bottom:800px;
       background-repeat: no-repeat;
 
     }
