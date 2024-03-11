@@ -10,12 +10,15 @@ import Pricing from "@/components/Pricing/index";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
+import Image from "next/image";
+
+
 
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
-  // other metadata
+  title: "NOOBIKID | DIGITAL",
+  description: "",
+   
 };
 
 export default function Home() {
@@ -24,15 +27,14 @@ export default function Home() {
       <ScrollUp />
       <Pricing type={undefined} />
       <Hero />
-    
-      {/* <Features />
-      <Video />
-      <Brands />
-      <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
-      <Blog />
-      <Contact /> */}
+     {/* <Features />  */}
+      {/* <Video /> */}
+      {/* <Brands /> */}
+      {/* <AboutSectionOne /> */}
+      {/* <AboutSectionTwo /> */}
+      {/* <Testimonials /> */}
+      {/* <Blog /> */}
+      {/* <Contact />  */}
     </>
   );
 }

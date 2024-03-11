@@ -23,6 +23,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "src/components/lotties/lottieanimation.tsx"],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "src/components/lotties/lottieanimation.tsx", "src/components/commingsoon/commingsoon.tsx"],
   "exclude": ["node_modules"]
 }
