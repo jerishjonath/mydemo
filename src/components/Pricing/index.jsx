@@ -70,7 +70,8 @@ const Pricing = ({ type }) => {
         style={{
           backgroundImage: `url(${Mountain})`,
         }} 
-        className="mountains">            <div className='LottieAnimation1'>
+        className="mountains">            
+        <div className='LottieAnimation1'>
         <Lottie 
           options={defaultOptions}
           height={700}px

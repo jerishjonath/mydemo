@@ -1,0 +1,159 @@
+.flip-clock {
+  --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+  --fcc-digit-block-width: 40px; /* width of digit card */
+  --fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+  --fcc-digit-font-size: 30px; /* font size of digit */
+  --fcc-digit-color: white; /* color of digit */
+  --fcc-label-font-size: 20px; /* font size of label */
+  --fcc-label-color: #ff6a00; /* color of label */
+  --fcc-background: rgb(67, 109, 67); /* background of digit card */
+  --fcc-divider-color: white; /* color of divider */
+  --fcc-divider-height: 1px; /* height of divider */
+  --fcc-separator-size: 6px; /* size of colon */
+  --fcc-separator-color: red; /* color of colon */
+}
+
+.tb {
+
+  display: table;
+  width: 100%;
+  outline: none;
+}
+
+.td {
+  display: table-cell;
+  outline: none;
+}
+
+::placeholder {
+  color: #ccc;
+  outline: none;
+}
+
+::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  outline: none;
+}
+
+#cover {
+  align-content: center;
+  max-width: 400px;
+  margin: 90px auto;
+  outline: none;
+}
+
+#ntf-area {
+  width: 200px;
+  height: 62px;
+  margin: 0 auto;
+  background-color: #5d5858;
+  border-radius: 40px;
+  transition: 0.5s cubic-bezier(0, 1.28, 0.29, 1.18) width;
+  outline: none;
+}
+
+#ntf-area.active {
+  width: 390px;
+  outline: none;
+}
+
+#ntf-btn,
+#f-msg {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.6s ease transform;
+  outline: none;
+}
+
+#ntf-btn {
+  transform: scale(1);
+  outline: none;
+}
+
+#ntf-btn.inactive {
+  transform: scale(0);
+  outline: none;
+}
+
+#ntf-area.active #ntf-btn {
+  display: none;
+  outline: none;
+}
+
+#ntf-form-cover.active {
+  display: block;
+  outline: none;
+}
+
+#ntf-form-cover {
+  padding: 10px;
+  display: none;
+  outline: none;
+}
+
+#td-inp {
+  padding-left: 10px;
+  outline: none;
+}
+
+#email-inp {
+  width: 100%;
+  color: #2d8fb6;
+  outline: none;
+}
+
+#td-pre {
+  width: 1px;
+  white-space: pre;
+  padding-left: 20px;
+  outline: none;
+}
+
+#submit-btn {
+  color: #4ec0ee;
+  padding: 13px;
+  background-color: #2d8fb6;
+  border-radius: 40px;
+  transform: scale(0);
+  transition: 0.4s cubic-bezier(0, 0.73, 0.35, 1.22) transform, 0.2s ease color;
+  outline: none;
+}
+
+#email-inp,
+#submit-btn {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  border: 0;
+  outline: none;
+}
+
+#submit-btn.active {
+  transform: scale(1);
+}
+
+#submit-btn.active.valid {
+  color: #fff;
+  cursor: pointer;
+}
+
+#f-msg {
+  position: relative;
+  top: -62px;
+  transform: scale(0);
+}
+
+#f-msg.active {
+  transform: scale(1);
+}
